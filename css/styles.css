@@ -1,3 +1,22 @@
+html{
+    box-sizing: border-box ;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/* контейнер */
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+}
+.list-asset {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /* портфолио */
 :root {
@@ -12,9 +31,15 @@ body{
     font-family: var(--main-font),
     sans-serif;
     color: var(--main-clr-);
+    margin: 0;
 }
 .header{
-    background-color: var(--background-clr);
+    background-color: var(--background-clr)
+}
+.list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 .item {
     list-style: none;
@@ -28,7 +53,6 @@ body{
     color: #2196F3;
     text-decoration: none;
 }
-
 .logo2 {
     color: #000;
 }
@@ -65,6 +89,7 @@ body{
 /* кнопки */
 
 .btn-portfolio{
+    display: inline-block;
     background: #F5F4FA;
     border-radius: 4px;
     font-weight: 500;
@@ -131,6 +156,8 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-clr-);
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 .title-team {
     font-weight: 700;
@@ -139,6 +166,9 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-clr-);
+    margin: 0;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 .list-name{
     font-weight: 500;
@@ -146,12 +176,16 @@ body{
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--main-clr-);
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 .list-professional{
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* главная */
@@ -159,6 +193,10 @@ body{
 
 .hero {
     background: #2F303A;
+    width: 1600px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 
@@ -173,9 +211,9 @@ body{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    display: inline-block;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     }
@@ -207,6 +245,8 @@ body{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 
 /* достоинства */
@@ -216,6 +256,8 @@ body{
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 10px;
 
     color: var(--main-clr-);
 }
@@ -225,6 +267,8 @@ body{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* футер */

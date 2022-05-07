@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--Шапка-->
 <header class="header">
-    <nav class="navigator">
+<div class="container">
+    <nav class="navigation">
         <a class="logo" href="./index.html">Web<span class="logo2">Studio</span></a>
     <!--Навигация-->
     <ul class="list">
@@ -26,15 +28,17 @@
         <li class="link-contact"><a class="element" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li class="link-contact"><a class="element" href="tel:+380961111111">+38 096 111 11 11</a> </li>
     </ul>
+</div>
     
 </header>
     <!--Уникальный контент стр-->
     <main>
         <section class="hero">
-            <h1 class="style-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="btn-hero" type="button">Заказать услугу</button>
+            <h1 class="style-title">Эффективные решения </br> для вашего бизнеса</h1>
+           <a><button class="btn-hero" type="button">Заказать услугу</button></a>
         </section>
-        <section>
+        <section class="container">
+            <div class="list-asset">  
             <ul class="list">
                 <li class="item">
                     <h3 class="item-title">Внимание к деталям</h3>
@@ -53,8 +57,10 @@
                     <p class="item-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <section>
+        <div class="container">
             <h2 class="title-work">Чем мы занимаемся</h2>
             <ul class="list">
                 <li class="item">
@@ -67,8 +73,10 @@
                     <img src="./images/img2.jpg" alt="пример3" width="370">
                 </li>
             </ul>
+        </div>
         </section>
         <section>
+        <div class="container">
             <h2 class="title-team">Наша команда</h2>
             <ul class="list">
                 <li class="item">
@@ -92,6 +100,7 @@
                     <p class="list-professional".>UI Designer</p>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
 
@@ -109,5 +118,6 @@
         </ul>
     </address>
     </footer>
+
 </body>
 </html>
