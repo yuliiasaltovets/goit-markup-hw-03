@@ -13,7 +13,8 @@ html{
     padding-right: 15px;
     margin: 0;
 }
-.list-asset {
+
+.container.list-asset {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -41,6 +42,16 @@ body{
     margin-bottom: 0px;
     padding: 0px;
 }
+.site-nav {
+    display: flex;
+}
+.site-nav .item {
+    display: block;
+}
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .item {
     list-style: none;
 }
@@ -58,16 +69,20 @@ body{
 }
 
 /* шапка */
-.link{
+.site-nav .link{
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    color: var(--main-clr-);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
-    color: var(--main-clr-);
     text-decoration: none;
     text-transform: capitalize;
 }
+
 .not-visible {
     visibility: hidden;
 }
@@ -85,7 +100,12 @@ body{
     text-decoration: none;
     list-style: none;
 }
-
+.list-contact {
+    display: flex;
+}
+.list-contact .link-contact + .link-contact {
+    margin-left: 50px;
+}
 /* кнопки */
 
 .btn-portfolio{
@@ -102,7 +122,6 @@ body{
     font-family: inherit;
     cursor: pointer;
 }
-
 .btn-portfolio:focus{
     background-color: #2196F3;
     color: #FFFFFF;
@@ -118,7 +137,6 @@ body{
 .list-button {
     list-style: none;
 }
-
 
 .element:hover{
     font-family: var(--main-font);
@@ -136,6 +154,13 @@ body{
 
 
 /* примеры работ */
+.list-work,
+.list-comand {
+    display: inline-block;
+}
+img {
+    display: block;
+}
 .item-project {
     font-weight: 700;
     font-size: 18px;
@@ -168,7 +193,7 @@ body{
     color: var(--main-clr-);
     margin: 0;
     padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .list-name{
     font-weight: 500;
