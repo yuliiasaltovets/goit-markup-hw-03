@@ -8,10 +8,20 @@ html{
 }
 /* контейнер */
 .container {
+    outline: 1px solid red;
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0;
+}
+/* контейнер портфолио */
+.container-portfolio {
+    outline: 1px solid red;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container.list-asset {
@@ -34,6 +44,7 @@ body{
     color: var(--main-clr-);
     margin: 0;
 }
+
 .header{
     background-color: var(--background-clr)
 }
@@ -41,9 +52,25 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
+    display: flex;
+    list-style: none;
+
 }
+.item-asset {
+    width: 270px;
+    margin-right: 30px;
+    padding-top: 94px;
+    padding-right: auto;
+    padding-bottom: 94px;
+    padding-left: auto;
+}
+
 .site-nav {
     display: flex;
+}
+.site-nav .list{
+    display: flex;
+    margin-right: 50px;
 }
 .site-nav .item {
     display: block;
@@ -63,7 +90,8 @@ body{
     line-height: 1.19;
     color: #2196F3;
     text-decoration: none;
-}
+    margin-right: 93px;
+    }
 .logo2 {
     color: #000;
 }
@@ -71,9 +99,6 @@ body{
 /* шапка */
 .site-nav .link{
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
-
     color: var(--main-clr-);
     font-weight: 500;
     font-size: 14px;
@@ -81,6 +106,13 @@ body{
     letter-spacing: 0.02em;
     text-decoration: none;
     text-transform: capitalize;
+}
+.main-nav {
+    display: flex;
+}
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .not-visible {
@@ -102,10 +134,13 @@ body{
 }
 .list-contact {
     display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 .list-contact .link-contact + .link-contact {
     margin-left: 50px;
 }
+
 /* кнопки */
 
 .btn-portfolio{
@@ -150,6 +185,7 @@ body{
 .element {
     color: #757575;
     text-decoration: none;
+
 }
 
 
@@ -161,6 +197,7 @@ body{
 img {
     display: block;
 }
+
 .item-project {
     font-weight: 700;
     font-size: 18px;
@@ -214,8 +251,10 @@ img {
 }
 
 /* главная */
-
-
+.h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
 .hero {
     background: #2F303A;
     width: 1600px;
@@ -223,7 +262,6 @@ img {
     margin-bottom: 0px;
     text-align: center;
 }
-
 
 .btn-hero {
     width: 200px;
@@ -241,6 +279,10 @@ img {
     display: inline-block;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-bottom: 200px;
+    margin-right: auto;
     }
 
 .btn-hero:hover{
@@ -271,10 +313,14 @@ img {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 0px;
+    margin-right: auto;
     margin-bottom: 30px;
-}
+    margin-left: auto;
+    padding-top: 200px;
 
+}
 /* достоинства */
+
 .item-title {
     font-weight: 700;
     font-size: 14px;
