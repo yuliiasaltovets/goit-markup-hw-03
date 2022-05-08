@@ -8,7 +8,6 @@ html{
 }
 /* контейнер */
 .container {
-    outline: 1px solid red;
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
@@ -54,6 +53,7 @@ html{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 
 /* портфолио */
 :root {
@@ -106,16 +106,17 @@ p {
 .item-work {
     width: 370px;
     display: inline-block;
-    margin-right: 30px;
     margin-bottom: 94px;
 }
 .item-asset {
     width: 270px;
-    margin-right: 30px;
     padding-top: 94px;
     padding-right: auto;
     padding-bottom: 94px;
     padding-left: auto;
+}
+.asset {
+    justify-content: space-between
 }
 
 .site-nav {
@@ -258,10 +259,28 @@ p {
 
 
 /* примеры работ */
-.list-work,
-.list-comand {
+.flex-border {
     display: inline-block;
+    width: 270px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    margin-right: 30px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
 }
+.flex-name {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+.team-container {   
+    background-color:#F5F4FA;
+}
+
 img {
     display: block;
 } 
