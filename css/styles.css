@@ -8,7 +8,7 @@ html{
 }
 /* контейнер */
 .container {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -21,12 +21,15 @@ html{
     margin-left: auto;
     margin-right: auto;
 }
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 94px;
+}
 .list-flex {
     display: flex;
     flex-wrap: wrap;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 94px;
 }
 
 .flex-element {
@@ -37,11 +40,12 @@ html{
     box-sizing: border-box;
     border: 1px solid #eeeeee
 }
-.item-project {
+.item-progect {
+    padding-top: 24px;
+    padding-right: auto;
+    padding-bottom: 20px;
     padding-left: 24px;
-}
-.item-option {
-    padding-left: 24px;
+
 }
 .flex-element:nth-child(3n){
     margin-right: 0px;
@@ -56,6 +60,7 @@ html{
 
 
 /* портфолио */
+
 :root {
      --main-font: 'Roboto', sans-serif;
      --background-clr: #ffffff;
@@ -91,8 +96,16 @@ p {
     margin: 0;
 }
 
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header{
     background-color: var(--background-clr)
+}
+.hdr {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .list {
     margin-top: 0px;
@@ -110,15 +123,16 @@ p {
 }
 .item-asset {
     width: 270px;
-    padding-top: 94px;
     padding-right: auto;
-    padding-bottom: 94px;
     padding-left: auto;
 }
 .asset {
-    justify-content: space-between
+    justify-content: space-between;
 }
-
+.asset-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .site-nav {
     display: flex;
 }
@@ -164,6 +178,8 @@ p {
 .main-nav {
     display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .navigation {
     display: flex;
@@ -235,9 +251,7 @@ p {
 .list-button {
     list-style: none;
     display: flex;
-    margin-bottom: 0px;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -275,10 +289,11 @@ p {
 .flex-name {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 94px;
 }
 .team-container {   
     background-color:#F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 img {
@@ -320,7 +335,6 @@ img {
     letter-spacing: 0.03em;
     color: var(--main-clr-);
     margin: 0;
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 .list-name{
@@ -340,6 +354,10 @@ img {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+.command-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 /* главная */
 .h1 {
@@ -350,6 +368,8 @@ img {
     background: #2F303A;
     margin-top: 0;
     margin-bottom: 0px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
 }
 
@@ -404,9 +424,7 @@ img {
     color: #FFFFFF;
     margin-top: 0px;
     margin-right: auto;
-    margin-bottom: 30px;
     margin-left: auto;
-    padding-top: 200px;
 
 }
 /* достоинства */
@@ -435,6 +453,8 @@ img {
 /* футер */
 .footer {
     background: var(--background-clr-ftr);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer{
     color: #ffffff; 
@@ -443,7 +463,6 @@ address {
     font-style: normal;
 }
 .list-adress {
-   padding-bottom: 60px;
    padding-left: 0px;
    margin-top: 20px;
    margin-bottom: 0px;
