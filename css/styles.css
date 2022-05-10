@@ -70,8 +70,6 @@ html{
  .list-flex > .flex-element {
      margin-left: 30px;
      margin-top: 30px;
-     padding-bottom: 20px;
-            
     width: 370px;
     box-sizing: border-box;
     border: 1px solid #eeeeee
@@ -105,11 +103,12 @@ html{
     list-style: none;
 
 }
-
+.list-work {
+    padding-bottom: 94px;
+}
 .item-work {
     width: 370px;
     display: inline-block;
-    margin-bottom: 94px;
 }
 .item-asset {
     width: 270px;
@@ -168,8 +167,6 @@ html{
 .main-nav {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .navigation {
     display: flex;
@@ -406,7 +403,7 @@ img {
 .style-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1. 36;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -451,14 +448,17 @@ img {
 address {
     font-style: normal;
 }
-.list-adress {
+.list-address {
    padding-left: 0px;
    margin-top: 20px;
    margin-bottom: 0px;
    text-align: left;
 
 }
-.footer-item-adress{
+.list-address > .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-item-address{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
